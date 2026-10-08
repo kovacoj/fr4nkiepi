@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T18:50:19.639319+00:00",
+  "generated_at": "2026-10-08T19:04:39.261818+00:00",
   "samples": [
     {
       "cpu_percent": "unavailable",
@@ -33,6 +33,281 @@
       "temperature_c": "61.835",
       "timestamp": "2026-10-08T18:50:07.995695+00:00",
       "uptime_seconds": 3781
+    },
+    {
+      "cpu_percent": "8.8",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.46",
+      "memory_used_percent": "54.3",
+      "temperature_c": "62.322",
+      "timestamp": "2026-10-08T18:50:43.034338+00:00",
+      "uptime_seconds": 3816
+    },
+    {
+      "cpu_percent": "11.8",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.74",
+      "memory_used_percent": "55.5",
+      "temperature_c": "65.244",
+      "timestamp": "2026-10-08T18:51:18.176802+00:00",
+      "uptime_seconds": 3852
+    },
+    {
+      "cpu_percent": "7.6",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.58",
+      "memory_used_percent": "54.9",
+      "temperature_c": "61.835",
+      "timestamp": "2026-10-08T18:51:53.047582+00:00",
+      "uptime_seconds": 3886
+    },
+    {
+      "cpu_percent": "7.8",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.44",
+      "memory_used_percent": "54.5",
+      "temperature_c": "61.835",
+      "timestamp": "2026-10-08T18:52:27.983978+00:00",
+      "uptime_seconds": 3921
+    },
+    {
+      "cpu_percent": "6.9",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.32",
+      "memory_used_percent": "54.7",
+      "temperature_c": "60.861",
+      "timestamp": "2026-10-08T18:53:03.009071+00:00",
+      "uptime_seconds": 3956
+    },
+    {
+      "cpu_percent": "7.5",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.36",
+      "memory_used_percent": "54.1",
+      "temperature_c": "59.887",
+      "timestamp": "2026-10-08T18:53:37.975872+00:00",
+      "uptime_seconds": 3991
+    },
+    {
+      "cpu_percent": "6.7",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.41",
+      "memory_used_percent": "54.2",
+      "temperature_c": "60.374",
+      "timestamp": "2026-10-08T18:54:12.973768+00:00",
+      "uptime_seconds": 4026
+    },
+    {
+      "cpu_percent": "8.4",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.53",
+      "memory_used_percent": "54.6",
+      "temperature_c": "60.374",
+      "timestamp": "2026-10-08T18:54:48.081483+00:00",
+      "uptime_seconds": 4061
+    },
+    {
+      "cpu_percent": "7.5",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.41",
+      "memory_used_percent": "54.3",
+      "temperature_c": "61.348",
+      "timestamp": "2026-10-08T18:55:22.973727+00:00",
+      "uptime_seconds": 4096
+    },
+    {
+      "cpu_percent": "8.5",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.48",
+      "memory_used_percent": "54.9",
+      "temperature_c": "60.861",
+      "timestamp": "2026-10-08T18:55:58.122578+00:00",
+      "uptime_seconds": 4131
+    },
+    {
+      "cpu_percent": "8.1",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.34",
+      "memory_used_percent": "54.3",
+      "temperature_c": "60.861",
+      "timestamp": "2026-10-08T18:56:32.993081+00:00",
+      "uptime_seconds": 4166
+    },
+    {
+      "cpu_percent": "6.8",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.24",
+      "memory_used_percent": "54.1",
+      "temperature_c": "59.4",
+      "timestamp": "2026-10-08T18:57:07.979818+00:00",
+      "uptime_seconds": 4201
+    },
+    {
+      "cpu_percent": "8.1",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.65",
+      "memory_used_percent": "54.0",
+      "temperature_c": "60.374",
+      "timestamp": "2026-10-08T18:57:42.980190+00:00",
+      "uptime_seconds": 4236
+    },
+    {
+      "cpu_percent": "24.4",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.8",
+      "hermes_running": false,
+      "load_1m": "0.90",
+      "memory_used_percent": "54.8",
+      "temperature_c": "62.809",
+      "timestamp": "2026-10-08T18:58:18.195482+00:00",
+      "uptime_seconds": 4272
+    },
+    {
+      "cpu_percent": "25.3",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.8",
+      "hermes_running": false,
+      "load_1m": "1.14",
+      "memory_used_percent": "57.0",
+      "temperature_c": "64.27",
+      "timestamp": "2026-10-08T18:58:48.853983+00:00",
+      "uptime_seconds": 4302
+    },
+    {
+      "cpu_percent": "29.1",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.8",
+      "hermes_running": false,
+      "load_1m": "1.25",
+      "memory_used_percent": "59.2",
+      "temperature_c": "64.27",
+      "timestamp": "2026-10-08T18:59:23.276089+00:00",
+      "uptime_seconds": 4337
+    },
+    {
+      "cpu_percent": "31.0",
+      "disk_free_gib": "7.2",
+      "disk_used_percent": "74.1",
+      "hermes_running": false,
+      "load_1m": "1.78",
+      "memory_used_percent": "54.3",
+      "temperature_c": "66.218",
+      "timestamp": "2026-10-08T18:59:58.418966+00:00",
+      "uptime_seconds": 4372
+    },
+    {
+      "cpu_percent": "16.1",
+      "disk_free_gib": "7.2",
+      "disk_used_percent": "74.1",
+      "hermes_running": false,
+      "load_1m": "1.36",
+      "memory_used_percent": "56.2",
+      "temperature_c": "64.27",
+      "timestamp": "2026-10-08T19:00:33.030385+00:00",
+      "uptime_seconds": 4406
+    },
+    {
+      "cpu_percent": "48.7",
+      "disk_free_gib": "7.1",
+      "disk_used_percent": "74.6",
+      "hermes_running": false,
+      "load_1m": "3.03",
+      "memory_used_percent": "54.4",
+      "temperature_c": "67.192",
+      "timestamp": "2026-10-08T19:01:09.772288+00:00",
+      "uptime_seconds": 4443
+    },
+    {
+      "cpu_percent": "25.7",
+      "disk_free_gib": "7.1",
+      "disk_used_percent": "74.6",
+      "hermes_running": true,
+      "load_1m": "2.30",
+      "memory_used_percent": "60.3",
+      "temperature_c": "68.166",
+      "timestamp": "2026-10-08T19:01:43.480496+00:00",
+      "uptime_seconds": 4477
+    },
+    {
+      "cpu_percent": "27.2",
+      "disk_free_gib": "7.1",
+      "disk_used_percent": "74.6",
+      "hermes_running": true,
+      "load_1m": "2.04",
+      "memory_used_percent": "59.2",
+      "temperature_c": "67.679",
+      "timestamp": "2026-10-08T19:02:18.222928+00:00",
+      "uptime_seconds": 4512
+    },
+    {
+      "cpu_percent": "27.5",
+      "disk_free_gib": "7.1",
+      "disk_used_percent": "74.6",
+      "hermes_running": false,
+      "load_1m": "1.62",
+      "memory_used_percent": "60.7",
+      "temperature_c": "70.114",
+      "timestamp": "2026-10-08T19:02:53.301542+00:00",
+      "uptime_seconds": 4547
+    },
+    {
+      "cpu_percent": "39.7",
+      "disk_free_gib": "7.1",
+      "disk_used_percent": "74.6",
+      "hermes_running": false,
+      "load_1m": "1.70",
+      "memory_used_percent": "60.4",
+      "temperature_c": "71.575",
+      "timestamp": "2026-10-08T19:03:28.302652+00:00",
+      "uptime_seconds": 4582
+    },
+    {
+      "cpu_percent": "29.8",
+      "disk_free_gib": "7.1",
+      "disk_used_percent": "74.6",
+      "hermes_running": false,
+      "load_1m": "1.64",
+      "memory_used_percent": "60.3",
+      "temperature_c": "66.705",
+      "timestamp": "2026-10-08T19:04:02.982046+00:00",
+      "uptime_seconds": 4616
+    },
+    {
+      "cpu_percent": "8.8",
+      "disk_free_gib": "7.1",
+      "disk_used_percent": "74.6",
+      "hermes_running": false,
+      "load_1m": "1.07",
+      "memory_used_percent": "60.5",
+      "temperature_c": "64.757",
+      "timestamp": "2026-10-08T19:04:38.195349+00:00",
+      "uptime_seconds": 4652
     }
   ]
 }
