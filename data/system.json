@@ -1,1 +1,38 @@
-{"generated_at":"2026-10-08T00:00:00Z","samples":[]}
+{
+  "generated_at": "2026-10-08T18:50:19.639319+00:00",
+  "samples": [
+    {
+      "cpu_percent": "unavailable",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.93",
+      "memory_used_percent": "55.1",
+      "temperature_c": "66.705",
+      "timestamp": "2026-10-08T18:49:03.339889+00:00",
+      "uptime_seconds": 3717
+    },
+    {
+      "cpu_percent": "9.7",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.65",
+      "memory_used_percent": "54.3",
+      "temperature_c": "64.27",
+      "timestamp": "2026-10-08T18:49:37.009968+00:00",
+      "uptime_seconds": 3750
+    },
+    {
+      "cpu_percent": "7.5",
+      "disk_free_gib": "7.3",
+      "disk_used_percent": "73.7",
+      "hermes_running": false,
+      "load_1m": "0.39",
+      "memory_used_percent": "54.3",
+      "temperature_c": "61.835",
+      "timestamp": "2026-10-08T18:50:07.995695+00:00",
+      "uptime_seconds": 3781
+    }
+  ]
+}
