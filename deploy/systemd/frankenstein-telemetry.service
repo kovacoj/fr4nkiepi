@@ -1,0 +1,12 @@
+[Unit]
+Description=Collect Frankenstein system telemetry
+
+[Service]
+Type=oneshot
+Environment=FRANKENSTEIN_STATE=%h/.local/share/frankenstein
+ExecStart=%h/.local/share/frankenstein/runtime/.venv/bin/frankenstein-telemetry sample-system
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/.local/share/frankenstein

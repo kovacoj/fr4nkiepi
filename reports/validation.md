@@ -50,3 +50,19 @@ Results:
 - MCP exposes search, describe, list, and execute only. Build, verify, activation, and rollback are not remotely exposed.
 
 The MCP protocol surface is locally tested, but Hermes has not yet been configured to launch it. Discord, live repository discovery, telemetry, generated-code isolation, and Pi deployment remain unimplemented.
+
+## 2026-10-08: Telemetry And Pages Foundation
+
+- Automated suite: 24 passed.
+- Static Pages tree validator: passed.
+- JavaScript syntax check: passed.
+- All seven public feeds parsed as valid JSON.
+- `main` and `gh-pages` were created as independent root histories.
+- Remote `gh-pages` tree contains only the eleven approved static files.
+- GitHub Pages branch source is `gh-pages` at `/`, with HTTPS enforced.
+- Initial live page and relative summary feed returned HTTP 200.
+- Pi system telemetry timer deployed and active; collection service exited successfully with approximately 21 MiB peak memory.
+- Pi JSONL and SQLite telemetry files exist outside Git.
+- A sanitized snapshot containing real Pi load, memory, disk, temperature, uptime, and Hermes-running state was exported and pushed.
+
+Still unverified: Hermes provider calls and costs, Discord, autonomous capability generation, management-layer self-extension, automatic Pi-to-GitHub publication, retention/log rotation, logout/reboot recovery, and the mandatory end-to-end qualification gates.

@@ -1,0 +1,11 @@
+[Unit]
+Description=Sample Frankenstein telemetry every 30 seconds
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=30s
+AccuracySec=5s
+Persistent=true
+
+[Install]
+WantedBy=timers.target

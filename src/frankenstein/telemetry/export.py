@@ -29,6 +29,7 @@ def build_public_snapshots(events: list[TelemetryEvent]) -> dict[str, Any]:
     models: dict[tuple[str, str], dict[str, Any]] = {}
     capabilities: dict[tuple[str, str], dict[str, Any]] = {}
     event_counts = Counter(event.type for event in events)
+    system_samples = []
 
     for event in events:
         if event.cost_status == "unknown":
@@ -48,6 +49,18 @@ def build_public_snapshots(events: list[TelemetryEvent]) -> dict[str, Any]:
             if event.type == "capability_invoked":
                 item["invocations"] += 1
                 item["successes" if event.success else "failures"] += 1
+        if event.type == "system_sample":
+            system_samples.append({
+                "timestamp": event.timestamp.isoformat(),
+                "cpu_percent": str(event.cpu_percent) if event.cpu_percent is not None else "unavailable",
+                "load_1m": str(event.load_1m) if event.load_1m is not None else "unavailable",
+                "memory_used_percent": str(event.memory_used_percent),
+                "disk_used_percent": str(event.disk_used_percent),
+                "disk_free_gib": str((Decimal(event.disk_free_bytes or 0) / Decimal(1024 ** 3)).quantize(Decimal("0.1"))),
+                "temperature_c": str(event.temperature_c) if event.temperature_c is not None else "unavailable",
+                "uptime_seconds": event.uptime_seconds,
+                "hermes_running": event.hermes_running,
+            })
 
     total_known = sum(costs.values(), Decimal(0))
     snapshots = {
@@ -71,7 +84,7 @@ def build_public_snapshots(events: list[TelemetryEvent]) -> dict[str, Any]:
                 if event.type.startswith("capability_") or event.type.startswith("management_")
             ],
         },
-        "system.json": {"generated_at": generated_at, "samples": []},
+        "system.json": {"generated_at": generated_at, "samples": system_samples[-288:]},
     }
     return json.loads(json.dumps(snapshots, default=str))
 

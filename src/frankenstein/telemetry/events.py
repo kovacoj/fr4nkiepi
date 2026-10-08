@@ -40,6 +40,16 @@ class TelemetryEvent(BaseModel):
     success: bool | None = None
     retry: bool = False
     value: Decimal | None = None
+    cpu_percent: Decimal | None = Field(default=None, ge=0, le=100)
+    load_1m: Decimal | None = Field(default=None, ge=0)
+    memory_used_percent: Decimal | None = Field(default=None, ge=0, le=100)
+    memory_available_bytes: int | None = Field(default=None, ge=0)
+    swap_used_percent: Decimal | None = Field(default=None, ge=0, le=100)
+    disk_used_percent: Decimal | None = Field(default=None, ge=0, le=100)
+    disk_free_bytes: int | None = Field(default=None, ge=0)
+    temperature_c: Decimal | None = None
+    uptime_seconds: int | None = Field(default=None, ge=0)
+    hermes_running: bool | None = None
 
     @model_validator(mode="after")
     def validate_time_and_cost(self):

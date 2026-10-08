@@ -15,6 +15,7 @@ test = ["pytest>=8,<10"]
 [project.scripts]
 frankenstein = "frankenstein.cli:main"
 frankenstein-mcp = "frankenstein.mcp_server:main"
+frankenstein-telemetry = "frankenstein.telemetry.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/frankenstein"]
