@@ -1,0 +1,4 @@
+{
+  "capability_id": "repo.issue_risk",
+  "requirement": "Classify release risk from inconsistent public repository issue records"
+}

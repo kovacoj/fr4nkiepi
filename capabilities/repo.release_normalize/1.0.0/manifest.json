@@ -1,0 +1,40 @@
+{
+  "id": "repo.release_normalize",
+  "name": "Repository Release Normalizer",
+  "version": "1.0.0",
+  "kind": "python_adapter",
+  "domain": "task",
+  "summary": "Normalize public repository releases into compact typed records",
+  "entrypoint": "frankenstein.release_normalize:run",
+  "input_schema": {
+    "type": "object",
+    "required": ["repository", "releases"],
+    "properties": {
+      "repository": {"type": "string"},
+      "releases": {"type": "array"}
+    }
+  },
+  "output_schema": {
+    "type": "object",
+    "required": ["repository", "release_count", "releases"]
+  },
+  "requires": [],
+  "permissions": {
+    "network_hosts": [],
+    "filesystem_read": [],
+    "filesystem_write": [],
+    "secrets": []
+  },
+  "provenance": {
+    "origin": "generated",
+    "artifact_sha256": "9361a5f452ede1b6af2acfd56e26b0f9bd65e940566807e8328f6589ef2be9b7",
+    "generated_by_execution_id": null
+  },
+  "verification": {
+    "suite": "fixtures/release_normalize_held_out.json",
+    "independent": true,
+    "permission_tests_required": true,
+    "regression_tests_required": true
+  },
+  "created_at": "2026-10-08T18:00:00Z"
+}

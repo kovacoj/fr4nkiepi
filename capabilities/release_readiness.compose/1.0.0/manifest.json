@@ -1,0 +1,44 @@
+{
+  "id": "release_readiness.compose",
+  "name": "Release Readiness Composer",
+  "version": "1.0.0",
+  "kind": "workflow",
+  "domain": "task",
+  "summary": "Compose normalized releases and issue risks into a release-readiness decision",
+  "entrypoint": "frankenstein.release_readiness:run",
+  "input_schema": {
+    "type": "object",
+    "required": ["repository", "releases", "issues"],
+    "properties": {
+      "repository": {"type": "string"},
+      "releases": {"type": "array"},
+      "issues": {"type": "array"}
+    }
+  },
+  "output_schema": {
+    "type": "object",
+    "required": ["repository", "status", "latest_release", "blocker_count", "summary"]
+  },
+  "requires": [
+    "repo.release_normalize@1.0.0",
+    "repo.issue_risk@1.0.0"
+  ],
+  "permissions": {
+    "network_hosts": [],
+    "filesystem_read": [],
+    "filesystem_write": [],
+    "secrets": []
+  },
+  "provenance": {
+    "origin": "generated",
+    "artifact_sha256": "9ad1f5ffa9c3a9a9485d06b59dda8b03fb0c426b222dba961e5d7aa4b3d330da",
+    "generated_by_execution_id": null
+  },
+  "verification": {
+    "suite": "fixtures/readiness_held_out.json",
+    "independent": true,
+    "permission_tests_required": true,
+    "regression_tests_required": true
+  },
+  "created_at": "2026-10-08T18:00:00Z"
+}

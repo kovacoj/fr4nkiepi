@@ -1,0 +1,10 @@
+{
+  "repository": "example/widgets",
+  "releases": [
+    {"tag_name": "v1.1.0", "published_at": "2026-10-07T10:00:00Z", "body": "- Faster startup"}
+  ],
+  "issues": [
+    {"number": 42, "title": "Authentication bypass", "state": "open", "labels": ["security"], "html_url": "https://example.test/issues/42"},
+    {"number": 43, "title": "Documentation typo", "state": "open", "labels": ["docs"]}
+  ]
+}

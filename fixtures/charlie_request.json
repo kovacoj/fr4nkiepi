@@ -1,0 +1,4 @@
+{
+  "capability_id": "release_readiness.compose",
+  "requirement": "Compose existing release and issue capabilities into a readiness decision"
+}

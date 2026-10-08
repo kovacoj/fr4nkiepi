@@ -1,0 +1,17 @@
+[
+  {
+    "name": "blocked release",
+    "input": {"repository": "held/ready", "releases": [], "issues": []},
+    "dependencies": {
+      "repo.release_normalize": {"repository": "held/ready", "release_count": 1, "releases": [{"tag": "v2"}]},
+      "repo.issue_risk": {"repository": "held/ready", "issue_count": 2, "high_risk_count": 1, "issues": []}
+    },
+    "expected": {
+      "repository": "held/ready",
+      "status": "blocked",
+      "latest_release": "v2",
+      "blocker_count": 1,
+      "summary": "Release blocked by 1 high-risk open issue(s)."
+    }
+  }
+]

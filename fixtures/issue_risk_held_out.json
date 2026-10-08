@@ -1,0 +1,22 @@
+[
+  {
+    "name": "risk labels and closed issues",
+    "input": {
+      "repository": "held/issues",
+      "issues": [
+        {"iid": 7, "title": "Crash", "state": "open", "labels": [{"name": "critical"}]},
+        {"number": 8, "title": "Slow", "state": "open", "labels": ["performance"]},
+        {"number": 9, "title": "Resolved", "state": "closed", "labels": ["blocker"]}
+      ]
+    },
+    "expected": {
+      "repository": "held/issues",
+      "issue_count": 2,
+      "high_risk_count": 1,
+      "issues": [
+        {"id": "7", "title": "Crash", "url": null, "risk": "high", "reasons": ["high-risk labels: critical"]},
+        {"id": "8", "title": "Slow", "url": null, "risk": "medium", "reasons": ["risk labels: performance"]}
+      ]
+    }
+  }
+]

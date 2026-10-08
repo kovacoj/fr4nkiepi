@@ -1,0 +1,4 @@
+{
+  "capability_id": "repo.release_normalize",
+  "requirement": "Normalize inconsistent public repository release API records"
+}

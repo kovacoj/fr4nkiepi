@@ -1,0 +1,40 @@
+{
+  "id": "repo.issue_risk",
+  "name": "Repository Issue Risk Assessor",
+  "version": "1.0.0",
+  "kind": "python_adapter",
+  "domain": "task",
+  "summary": "Normalize public repository issues and classify deterministic release risk",
+  "entrypoint": "frankenstein.issue_risk:run",
+  "input_schema": {
+    "type": "object",
+    "required": ["repository", "issues"],
+    "properties": {
+      "repository": {"type": "string"},
+      "issues": {"type": "array"}
+    }
+  },
+  "output_schema": {
+    "type": "object",
+    "required": ["repository", "issue_count", "high_risk_count", "issues"]
+  },
+  "requires": [],
+  "permissions": {
+    "network_hosts": [],
+    "filesystem_read": [],
+    "filesystem_write": [],
+    "secrets": []
+  },
+  "provenance": {
+    "origin": "generated",
+    "artifact_sha256": "0b6fffb1721f6e7699dde682a39e56d62d3389e1a9274ca8a1f0c62d9a22a820",
+    "generated_by_execution_id": null
+  },
+  "verification": {
+    "suite": "fixtures/issue_risk_held_out.json",
+    "independent": true,
+    "permission_tests_required": true,
+    "regression_tests_required": true
+  },
+  "created_at": "2026-10-08T18:00:00Z"
+}

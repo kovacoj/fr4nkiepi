@@ -1,0 +1,8 @@
+.env
+/notes.md
+/reports/pi_audit.md
+.frankenstein/
+.pytest_cache/
+.venv/
+__pycache__/
+*.pyc
