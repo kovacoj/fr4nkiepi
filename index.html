@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sanitized observability dashboard for Frankenstein agent">
+  <title>Frankenstein Observatory</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">FRANKENSTEIN / OBSERVATORY</p>
+      <h1>Capability evolution, measured.</h1>
+    </div>
+    <div class="status" aria-live="polite"><span id="status-dot"></span><span id="status-text">Loading telemetry</span></div>
+  </header>
+
+  <main>
+    <section aria-labelledby="overview-title">
+      <div class="section-heading"><h2 id="overview-title">Overview</h2><p id="freshness">Last reported: unavailable</p></div>
+      <div class="metric-grid">
+        <article><span>Total known spend</span><strong id="total-cost">Unknown</strong></article>
+        <article><span>Execution spend</span><strong id="execution-cost">Unknown</strong></article>
+        <article><span>Build spend</span><strong id="build-cost">Unknown</strong></article>
+        <article><span>Capabilities</span><strong id="capability-count">0</strong></article>
+        <article><span>Completed tasks</span><strong id="task-count">0</strong></article>
+        <article><span>Unknown-cost calls</span><strong id="unknown-cost">0</strong></article>
+      </div>
+    </section>
+
+    <section class="split" aria-label="Costs and system status">
+      <article class="panel">
+        <div class="section-heading"><h2>Costs &amp; tokens</h2><span>USD by phase</span></div>
+        <div id="cost-bars" class="bars" role="img" aria-label="Known spending by phase"></div>
+        <div id="models" class="table-wrap"></div>
+      </article>
+      <article class="panel">
+        <div class="section-heading"><h2>Raspberry Pi</h2><span>Periodic snapshot</span></div>
+        <div id="system-empty" class="empty">No system samples published yet.</div>
+        <dl id="system" class="system-grid"></dl>
+      </article>
+    </section>
+
+    <section class="panel" aria-labelledby="capabilities-title">
+      <div class="section-heading"><h2 id="capabilities-title">Capabilities</h2><span>Verified registry projection</span></div>
+      <div id="capabilities" class="table-wrap"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="evolution-title">
+      <div class="section-heading"><h2 id="evolution-title">Evolution</h2><span>Sanitized lifecycle evidence</span></div>
+      <ol id="events" class="event-list"></ol>
+      <div id="events-empty" class="empty">No lifecycle evidence published yet.</div>
+    </section>
+  </main>
+
+  <footer>Read-only public projection. Operational logs and private session data remain on the runtime host.</footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
