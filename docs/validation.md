@@ -18,4 +18,6 @@ Live Discord, provider usage, reboot recovery, and automated Pi publication rema
 - TTS is configured for ElevenLabs `eleven_flash_v2_5` with Hermes' default voice.
 - Text Discord transport is ready for an operator message test.
 
-Not passed: the configured OpenRouter model has no provider credential; model responses cannot be claimed. Voice-channel playback is disabled because `libopus0` is absent and the runtime account cannot install system packages. Voice join, transcription, synthesis, multi-user behavior, and spoken playback require operator testing after those blockers are resolved.
+System Opus is installed and visible to the ARM64 linker. After gateway restart, the prior `Opus codec not found` warning was absent. Voice-channel playback dependencies are therefore ready, but voice join, transcription, synthesis, multi-user behavior, and spoken playback still require operator testing in Discord.
+
+Not passed: the configured OpenRouter model has no provider credential, so model responses cannot be claimed.

@@ -36,11 +36,11 @@ journalctl --user -u hermes-gateway.service -n 100 --no-pager
 
 The gateway is managed by Hermes' generated user service and systemd lingering is enabled. Do not launch a second foreground gateway while this service is active.
 
-Voice-channel playback additionally needs system Opus on the Pi:
+Voice-channel playback uses system Opus on the Pi:
 
 ```bash
 sudo apt-get install -y libopus0
 hermes gateway restart
 ```
 
-Hermes already supplies its managed ARM64 FFmpeg binary. Do not install unrelated desktop audio packages.
+`libopus0` is installed and verified. Hermes supplies its managed ARM64 FFmpeg binary. Do not install unrelated desktop audio packages.
